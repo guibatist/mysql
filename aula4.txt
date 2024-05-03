@@ -1,0 +1,40 @@
+SELECT
+- Formas de selecionar dados
+
+1. Selecionar tudo
+SELECT * FROM cursos; - O '*' filtra todas as colunas
+
+2. Selecionar tudo por ondem crescente
+SELECT * FROM cursos order by coluna; - Coluna é a por onde será feito a seleção como referencia
+
+3. Selecionar tudo por ordenação decrescente
+SELECT * FROM cursos order by coluna DESC; - DESC não é de DESCRIBE mas de "decrescente"
+
+4. Filtrando colunas especificas 
+SELECT nome, carga, ano FROM cursos order by nome;
+
+5. Filtrando linhas
+SELECT * FROM cursos WHERE ano = '2016' ORDER BY nome;
+
+6. Filtrando linhas e colunas
+SELECT nome, carga, descricao FROM cursos WHERE ano <= '2016' ORDER BY nome;
+
+7. FIltrando entre
+SELECT nome, ano FROM cursos WHERE ano BETWEEN '2016' anda '2019' ORDER BY nome;
+
+8. Filtrando por valores especificos
+SELECT nome, descricao, ano FROM cursos WHERE ano in (2014, 2016) ORDER BY nome;
+SELECT nome, descricao, ano FROM cursos WHERE carga . 35 and totaulas , 30 ORDER BY nome;
+
+9. Seleção por nome
+SELECT * FROM cursos WHERE nome = 'PHP';
+OU
+SELECT * FROM cursos WHERE nome like'a%'; - mostra os registros começados com a
+SELECT * FROM cursos WHERE nome like'a%'; - mostra os registros terminado com a
+SELECT * FROM cursos WHERE nome like'%a%'; - mostra os registros independentes do local com a
+SELECT * FROM cursos WHERE nome not like'%a%'; - mostra os registros que não tem o a
+
+10. Somar e Média
+sum(totaulas)
+abg(totaulas)
+

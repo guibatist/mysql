@@ -1,0 +1,14 @@
+# Manipulando registros/linhas
+insert into cursos (nome, descricao, carga, totalaulas, ano) values ('CSS3', 'Curso de CSS3', '35:30:00', 40, '2015'), ('JavaScript', 'Curso de JavaScript', '42:15:00', 45, '2016'), ('Python', 'Curso de Python', '50:00:00', 50, '2017'), ('Java', 'Curso de Java', '48:45:00', 48, '2018'), ('SQL', 'Curso de SQL', '30:00:00', 35, '2019'), ('PHP', 'Curso de PHP', '45:30:00', 42, '2020'), ('C++', 'Curso de C++', '55:15:00', 60, '2021'), ('Ruby', 'Curso de Ruby', '38:45:00', 40, '2022'), ('C#', 'Curso de C#', '42:00:00', 45, '2023'), ('React', 'Curso de React', '60:00:00', 55, '2024');
+
+# Modificando uma linhas
+UPTADE cursos SET nome = 'HMTL5' WHERE idcursos = '1';
+
+# Apagar todas as linhas
+TRUNCATE cursos;
+
+# Ver registros
+READ FROM cursos WHERE idcurso = '3';
+
+# Deletando linhas
+DELETE FROM cursos WHERE idcurso = '10';

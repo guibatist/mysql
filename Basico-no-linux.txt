@@ -1,0 +1,8 @@
+# Abrindo o mysql no terminal
+1. sudo mysql -u root -p
+
+# Exportando
+mysqldump -u root -p teste > primeiroemlinux.sql
+
+# Abrindo um arquivo novo
+mysql -u root -p cadastro < Dump-CeV01.sql

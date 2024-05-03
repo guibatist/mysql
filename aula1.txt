@@ -1,0 +1,42 @@
+# Abrindo o mysql no terminal
+1. sudo mysql -u root -p
+
+# Criando um banco de dados
+CREATE DATABASE nome_do_banco;
+
+# Criando tabelas
+CREATE TABLE nome (
+nome,
+idade,
+sexo,
+peso,
+altura,
+nacionalidade
+):
+/*
+Tipos primitivos
+1. Numeros
+- Inteiro: TinyInt, SmallInt, Int, MediumINt, BigInt
+- Real: Decimal, FLoat, Double, Real
+- Lógico: Bit, Boolean
+
+2. Data e Tempo: Date, DateTime, TimeStamp, Time, Year
+
+3. Literais
+- Caractere: Char, VarChar
+- Texto: TinyText, Text, MediumText, LongText
+- Binário: TinyBlob, Blob, MediumBlob, LongBlob
+- Coleções: Enum, Set
+
+4. Espacial: Geometry, Point, Polygon, MultiPolygon
+
+*/
+
+# Ver tabela
+DESCRIBE nome_da_tabela;
+
+# Ver todos os banco de dados
+show databeses;
+
+# Ver todos as tabelas
+show tables;

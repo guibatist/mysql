@@ -1,0 +1,21 @@
+# Modelo relacional
+1. Chaves EStrangeira e JOIN
+- Criando uma chave estrangeira
+ALTER TABLE nome ADD FOREIGN KEY (nome_do_registro) REFERENCES outra_tabela(referencia);
+
+- Adicionando referencia
+UPDATE nome_tabela SET nome_do_campo = 'dado-referencial'
+
+- Juntando dados 
+SELECT gafanhotos.nome, gafanhotos.cursopreferido, cursos.nome FROM gafanhotos 
+JOIN cursos ON cursos.idcurso = gafanhotos.cursopreferido;
+
+OUTER JOIN - Mostra até os dados sem ligações (LEFT, RIGHT)
+
+2. INNER JOIN para várias tabelas (Múitos Pra Múitos)
+- Criar uma tabela extra
+* Precisa se de dois, ou mais, registros referenciais
+
+create table gafanhoto_assiste_curso (id int NOT NULL AUTO_INCREMENT, data date, idgafanhoto int, idcurso int, PRIMARY KEY (id), FOREIGN KEY (idgafanhoto) REFERENCES gafanhotos(id), FOREIGN KEY (idcurso) REFERENCES cursos(idcurso))
+
+- Colocando os dados com JOIN

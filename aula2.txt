@@ -1,0 +1,35 @@
+# Adicionando Dados em uma tabela
+insert into pessoas 
+values 
+('1', 'Guilherme', '2007/15/04', 'masculino', '65kg', 'Brasileiro');
+
+# Adicionando tabela
+ALTER TABLE nome_da_tabela
+ADD nome_da_coluna tipo_de_dados [restrições];
+
+# Alterando uma coluna
+ALTER TABLE nome_da_tabela
+MODIFY COLUMN peso DECIMAL(5,3);
+
+# Renomeando tabela
+ALTER TABLE nome_da_tabela
+RENAME COLUMN nome_antigo TO nome_novo;
+
+# Excluindo coluna
+ALTER TABLE nome_da_tabela
+DROP COLUMN nome_da_coluna;
+
+# Adicionando restrições
+ALTER TABLE nome_da_tabela
+ADD CONSTRAINT nome_da_restrição tipo_de_restrição (colunas);
+
+# Excluindo restrições
+ALTER TABLE nome_da_tabela
+DROP CONSTRAINT nome_da_restrição;
+
+# Adicionando indice
+ALTER TABLE nome_da_tabela
+ADD INDEX nome_do_indice (colunas);
+
+
+
